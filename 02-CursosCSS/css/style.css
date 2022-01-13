@@ -218,9 +218,7 @@ lista de 12 elementos le aplica el estilo a
   background-color: fuchsia;
 }
 
-/*
-Negación, aplica estilos menos a los que que sean parrafos
-*/
+/*  Negación, aplica estilos menos a los que que sean parrafos  */
 
 .articulo-pseudoclases *:not(p) {
   background-color: beige;
@@ -230,6 +228,12 @@ Negación, aplica estilos menos a los que que sean parrafos
 2:43:34 - Pseudoelementos
 Pseudoelementos - Dan estilos a partes específicas de un elemento, se usa el :: para diferenciarlos de las pseudoclases
 https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
+*/
+
+/*
+jarabe: hiedra o tosile
+Echinacea
+jarabe pulmonar
 */
 
 .saga-geminis::before {
