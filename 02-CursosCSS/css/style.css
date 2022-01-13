@@ -128,7 +128,7 @@ p {
 }
 
 /* 
-Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elemento
+Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elemento, se distinguen por el simbolo :
 https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 */
 
@@ -164,6 +164,8 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
   font-size: 20px;
 }
 
+/*  2:28:49 - Pseudoclases por posición y tipo */
+
 #temario-css:target {
   background-color: lightgreen;
 }
@@ -183,6 +185,14 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 .lista-pseudoclases li:nth-child(4n) {
   font-size: 20px;
 }
+
+/*  Le aplica el estilo al 3n+1, pero contando desde el principio de la lista en cada iteración
+lista de 12 elementos le aplica el estilo a 
+ a. 4to elemento 
+ b. 7mo elemento
+ c. 10mo elemento
+ d. 1er elemento (12+1, como no existe un 13 elemento, se lo aplica al primero)
+*/
 
 .lista-pseudoclases li:nth-child(3n + 1) {
   font-weight: bold;
@@ -208,11 +218,16 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
   background-color: fuchsia;
 }
 
+/*
+Negación, aplica estilos menos a los que que sean parrafos
+*/
+
 .articulo-pseudoclases *:not(p) {
   background-color: beige;
 }
 
 /*
+2:43:34 - Pseudoelementos
 Pseudoelementos - Dan estilos a partes específicas de un elemento, se usa el :: para diferenciarlos de las pseudoclases
 https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
 */
